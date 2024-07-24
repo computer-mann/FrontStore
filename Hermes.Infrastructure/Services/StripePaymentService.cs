@@ -1,16 +1,16 @@
 ﻿using AutoMapper;
-using Hermes.Application.DTOs;
-using Hermes.Application.Exceptions;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Enums;
-using Hermes.Domain.Interfaces;
-using Hermes.Domain.Settings;
+using FrontStore.Application.DTOs;
+using FrontStore.Application.Exceptions;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Enums;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Domain.Settings;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Stripe;
 using Stripe.Checkout;
 
-namespace Hermes.Infrastructure.Services;
+namespace FrontStore.Infrastructure.Services;
 
 public class StripePaymentService : IPaymentService
 {

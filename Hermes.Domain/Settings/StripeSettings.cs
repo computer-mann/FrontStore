@@ -1,4 +1,4 @@
-﻿namespace Hermes.Domain.Settings;
+﻿namespace FrontStore.Domain.Settings;
 
 public class StripeSettings
 {

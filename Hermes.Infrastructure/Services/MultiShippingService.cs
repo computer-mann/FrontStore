@@ -1,11 +1,11 @@
-﻿using Hermes.Application.DTOs;
-using Hermes.Application.Exceptions;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Shipment = Hermes.Application.DTOs.Shipment;
+﻿using FrontStore.Application.DTOs;
+using FrontStore.Application.Exceptions;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using Shipment = FrontStore.Application.DTOs.Shipment;
 
-namespace Hermes.Infrastructure.Services;
+namespace FrontStore.Infrastructure.Services;
 
 // TODO: Implement Shippo API for multi shipping providers support, currently act as placeholder
 public class MultiShippingService(IUnitOfWork unitOfWork) : IShippingService

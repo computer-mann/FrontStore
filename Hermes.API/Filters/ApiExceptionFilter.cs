@@ -1,8 +1,8 @@
-﻿using Hermes.Application.Exceptions;
+﻿using FrontStore.Application.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Hermes.API.Filters;
+namespace FrontStore.API.Filters;
 
 public class ApiExceptionFilter : IExceptionFilter
 {

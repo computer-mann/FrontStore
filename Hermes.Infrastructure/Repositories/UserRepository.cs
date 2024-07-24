@@ -1,11 +1,11 @@
-﻿using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
-public class UserRepository(HermesDbContext context) : GenericRepository<User>(context), IUserRepository
+public class UserRepository(FrontStoreDbContext context) : GenericRepository<User>(context), IUserRepository
 {
     /// <summary>
     /// Retrieves a User entity based on the provided ID, including related entities.

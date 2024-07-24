@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using Hermes.Application.DTOs;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Application.Exceptions;
+using FrontStore.Application.DTOs;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Application.Exceptions;
 
-namespace Hermes.Application.Services;
+namespace FrontStore.Application.Services;
 
 public class CategoryService(IUnitOfWork unitOfWork, IMapper mapper) : ICategoryService
 {

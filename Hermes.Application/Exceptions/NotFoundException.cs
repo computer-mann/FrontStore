@@ -1,3 +1,3 @@
-﻿namespace Hermes.Application.Exceptions;
+﻿namespace FrontStore.Application.Exceptions;
 
 public class NotFoundException(string message) : ApiException(message, 404);

@@ -1,6 +1,6 @@
-﻿using Hermes.Domain.Enums;
+﻿using FrontStore.Domain.Enums;
 
-namespace Hermes.Application.Interfaces;
+namespace FrontStore.Application.Interfaces;
 
 /// <summary>
 /// Defines the interface for a service that manages Inventory operations.

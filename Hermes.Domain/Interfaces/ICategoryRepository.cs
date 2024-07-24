@@ -1,6 +1,6 @@
-﻿using Hermes.Domain.Entities;
+﻿using FrontStore.Domain.Entities;
 
-namespace Hermes.Domain.Interfaces;
+namespace FrontStore.Domain.Interfaces;
 
 /// <summary>
 /// Defines the repository interface for managing Category entities.

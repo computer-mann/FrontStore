@@ -1,11 +1,11 @@
-﻿using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
-public class RoleRepository(HermesDbContext context) : GenericRepository<Role>(context), IRoleRepository
+public class RoleRepository(FrontStoreDbContext context) : GenericRepository<Role>(context), IRoleRepository
 {
     /// <summary>
     /// Retrieves a role by its name.

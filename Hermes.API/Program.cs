@@ -1,7 +1,7 @@
-using Hermes.API.Utilities;
-using Hermes.Infrastructure.Data.Context;
+using FrontStore.API.Utilities;
+using FrontStore.Infrastructure.Data.Context;
 
-namespace Hermes.API;
+namespace FrontStore.API;
 
 public class Program
 {
@@ -13,7 +13,7 @@ public class Program
         // Seed data to the database for testing purposes, uncomment if needed
         using (var serviceScope = builder.Services.GetRequiredService<IServiceScopeFactory>().CreateScope())
         {
-            var context = serviceScope.ServiceProvider.GetService<HermesDbContext>();
+            var context = serviceScope.ServiceProvider.GetService<FrontStoreDbContext>();
             var seeder = new DataSeeder(context!);
             await seeder.SeedAsync();
         }

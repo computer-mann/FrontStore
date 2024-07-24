@@ -1,11 +1,11 @@
-﻿using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
-public class CartItemRepository(HermesDbContext context) : GenericRepository<CartItem>(context), ICartItemRepository
+public class CartItemRepository(FrontStoreDbContext context) : GenericRepository<CartItem>(context), ICartItemRepository
 {
     /// <summary>
     /// Retrieves a CartItem from the repository based on the provided cart ID and product ID.

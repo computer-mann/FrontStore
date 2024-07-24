@@ -1,6 +1,6 @@
-﻿using Hermes.Domain.Entities;
+﻿using FrontStore.Domain.Entities;
 
-namespace Hermes.Application.DTOs;
+namespace FrontStore.Application.DTOs;
 
 public class RegisterDto
 {

@@ -1,12 +1,12 @@
-﻿using Hermes.Domain.Entities;
-using Hermes.Domain.Enums;
-using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Domain.Entities;
+using FrontStore.Domain.Enums;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
-public class OrderRepository(HermesDbContext context) : GenericRepository<Order>(context), IOrderRepository
+public class OrderRepository(FrontStoreDbContext context) : GenericRepository<Order>(context), IOrderRepository
 {
     /// <summary>
     /// Retrieves a collection of orders associated with a specific user.

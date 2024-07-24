@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Hermes.Infrastructure.Data.Migrations
+namespace FrontStore.Infrastructure.Data.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration

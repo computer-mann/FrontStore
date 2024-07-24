@@ -1,4 +1,4 @@
-﻿namespace Hermes.Application.DTOs;
+﻿namespace FrontStore.Application.DTOs;
 
 public class UserDto 
 {

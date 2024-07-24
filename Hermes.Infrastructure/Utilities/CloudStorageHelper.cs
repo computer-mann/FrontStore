@@ -1,9 +1,9 @@
 ﻿using Azure.Storage.Blobs;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Settings;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Settings;
 using Microsoft.Extensions.Options;
 
-namespace Hermes.Infrastructure.Utilities;
+namespace FrontStore.Infrastructure.Utilities;
 
 public class CloudStorageHelper(IOptions<AzureStorageSettings> azureStorageSettings) : ICloudStorageHelper
 {

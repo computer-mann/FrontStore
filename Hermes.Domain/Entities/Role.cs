@@ -1,5 +1,5 @@
 ﻿
-namespace Hermes.Domain.Entities;
+namespace FrontStore.Domain.Entities;
 
 public class Role : BaseEntity
 {

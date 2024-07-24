@@ -1,4 +1,4 @@
-﻿namespace Hermes.Application.Exceptions;
+﻿namespace FrontStore.Application.Exceptions;
 
 public class ApiException(string message, int statusCode) : Exception(message)
 {

@@ -4,9 +4,9 @@ using System.Net.Http.Json;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
-using Hermes.Application.DTOs;
+using FrontStore.Application.DTOs;
 
-namespace Hermes.API.Tests.Integration.Controllers;
+namespace FrontStore.API.Tests.Integration.Controllers;
 
 public class PaymentsControllerTests(CustomWebApplicationFactory<Program> factory)
     : IClassFixture<CustomWebApplicationFactory<Program>>

@@ -1,7 +1,7 @@
-﻿using Hermes.Application.DTOs;
-using Hermes.Domain.Entities;
+﻿using FrontStore.Application.DTOs;
+using FrontStore.Domain.Entities;
 
-namespace Hermes.Application.Interfaces;
+namespace FrontStore.Application.Interfaces;
 
 /// <summary>
 /// Defines the interface for a service that manages Coupon operations.

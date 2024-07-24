@@ -1,9 +1,9 @@
-﻿using Hermes.API.Middlewares;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Interfaces;
+﻿using FrontStore.API.Middlewares;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Hermes.API.Attributes;
+namespace FrontStore.API.Attributes;
 
 /// <summary>
 /// Attribute for authorizing access to an action.

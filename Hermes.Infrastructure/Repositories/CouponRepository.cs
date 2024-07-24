@@ -1,11 +1,11 @@
-﻿using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
-public class CouponRepository(HermesDbContext context) :
+public class CouponRepository(FrontStoreDbContext context) :
     GenericRepository<Coupon>(context), ICouponRepository
 {
     /// <summary>

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Hermes.Domain.Enums;
+using FrontStore.Domain.Enums;
 
-namespace Hermes.Domain.Entities;
+namespace FrontStore.Domain.Entities;
 
 public class Product : BaseEntity
 {

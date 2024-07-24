@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
-using Hermes.Application.DTOs;
+using FrontStore.Application.DTOs;
 
-namespace Hermes.API.Validators;
+namespace FrontStore.API.Validators;
 
 public class RefreshTokenDtoValidator : AbstractValidator<RefreshTokenDto>
 {

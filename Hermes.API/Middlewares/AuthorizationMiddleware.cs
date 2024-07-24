@@ -1,8 +1,8 @@
 ﻿using System.Security.Claims;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Interfaces;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Interfaces;
 
-namespace Hermes.API.Middlewares;
+namespace FrontStore.API.Middlewares;
 
 /// <summary>
 /// Middleware for handling authorization, validating JWT tokens and checking user permissions.

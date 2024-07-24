@@ -1,15 +1,15 @@
-﻿using Hermes.Application.DTOs;
-using Hermes.Application.Exceptions;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Interfaces;
-using Hermes.Domain.Settings;
+﻿using FrontStore.Application.DTOs;
+using FrontStore.Application.Exceptions;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Domain.Settings;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using MimeKit;
 
-namespace Hermes.Infrastructure.Services;
+namespace FrontStore.Infrastructure.Services;
 
 public class EmailService(IOptions<EmailSettings> options, IUnitOfWork unitOfWork) : IEmailService
 {
@@ -27,13 +27,13 @@ public class EmailService(IOptions<EmailSettings> options, IUnitOfWork unitOfWor
         var email = new MimeMessage();
         email.From.Add(new MailboxAddress(options.Value.SenderName, options.Value.SenderEmail)); 
         email.To.Add(new MailboxAddress($"{user.FirstName} {user.LastName}", user.Email)); 
-        email.Subject = "Hermes E-Commerce - Order Confirmation"; 
+        email.Subject = "FrontStore E-Commerce - Order Confirmation"; 
 
         var bodyBuilder = new BodyBuilder
         {
             HtmlBody = $@"<h1>Thank You for Your Order!</h1>
                       <p>Dear {user.FirstName} {user.LastName},</p>
-                      <p>Thank you for your recent order with Hermes E-Commerce. We're excited to get your order processed and on its way to you.</p>
+                      <p>Thank you for your recent order with FrontStore E-Commerce. We're excited to get your order processed and on its way to you.</p>
                       <p><strong>Order Details:</strong></p>
                       <ul>
                           <li>Order ID: {order.Id}</li>
@@ -64,13 +64,13 @@ public class EmailService(IOptions<EmailSettings> options, IUnitOfWork unitOfWor
         var email = new MimeMessage();
         email.From.Add(new MailboxAddress(options.Value.SenderName, options.Value.SenderEmail)); 
         email.To.Add(new MailboxAddress($"{user.FirstName} {user.LastName}", user.Email)); 
-        email.Subject = "Hermes E-Commerce - Shipping Update";
+        email.Subject = "FrontStore E-Commerce - Shipping Update";
 
         var bodyBuilder = new BodyBuilder
         {
             HtmlBody = $@"<h1>Shipping Update</h1>
                       <p>Dear {user.FirstName} {user.LastName},</p>
-                      <p>Thank you for your recent order with Hermes E-Commerce. We're excited to get your order processed and on its way to you.</p>
+                      <p>Thank you for your recent order with FrontStore E-Commerce. We're excited to get your order processed and on its way to you.</p>
                       <p><strong>Order Details:</strong></p>
                       <ul>
                           <li>Order ID: {order.Id}</li>
@@ -97,7 +97,7 @@ public class EmailService(IOptions<EmailSettings> options, IUnitOfWork unitOfWor
         var email = new MimeMessage();
         email.From.Add(new MailboxAddress(options.Value.SenderName, options.Value.SenderEmail)); 
         email.To.Add(new MailboxAddress($"{userEmail}", userEmail)); 
-        email.Subject = "Hermes E-Commerce - Password Reset";
+        email.Subject = "FrontStore E-Commerce - Password Reset";
 
         var bodyBuilder = new BodyBuilder
         {
@@ -107,7 +107,7 @@ public class EmailService(IOptions<EmailSettings> options, IUnitOfWork unitOfWor
                       <p><a href='{options.Value.PasswordResetEndpoint}{resetToken}'>Reset Password</a></p>
                       <p>This link will expire in 1 hour.</p>
                       <p>If you did not request a password reset, please ignore this email.</p>""
-                      <p>Thank you for using Hermes E-Commerce!</p>" 
+                      <p>Thank you for using FrontStore E-Commerce!</p>" 
         };
 
         email.Body = bodyBuilder.ToMessageBody();

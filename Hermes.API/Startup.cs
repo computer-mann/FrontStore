@@ -3,14 +3,14 @@ using EasyCaching.InMemory;
 using EFCoreSecondLevelCacheInterceptor;
 using FluentValidation;
 using FluentValidation.AspNetCore;
-using Hermes.API.Filters;
-using Hermes.API.Utilities;
-using Hermes.Infrastructure.Data.Context;
+using FrontStore.API.Filters;
+using FrontStore.API.Utilities;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using AutoValidationExtensions = SharpGrip.FluentValidation.AutoValidation.Mvc.Extensions.ServiceCollectionExtensions;
 
-namespace Hermes.API;
+namespace FrontStore.API;
 
 public class Startup(IConfiguration configuration)
 {
@@ -18,14 +18,14 @@ public class Startup(IConfiguration configuration)
     {
         // 1. Configure Database
         services.AddControllers();
-        services.AddDbContext<HermesDbContext>((serviceProvider, options) =>
+        services.AddDbContext<FrontStoreDbContext>((serviceProvider, options) =>
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
                     sqlServerOptionsBuilder =>
                     {
                         sqlServerOptionsBuilder
                             .CommandTimeout((int)TimeSpan.FromMinutes(3).TotalSeconds)
                             .EnableRetryOnFailure()
-                            .MigrationsAssembly(typeof(HermesDbContext).Assembly.FullName);
+                            .MigrationsAssembly(typeof(FrontStoreDbContext).Assembly.FullName);
                     })
                 .AddInterceptors(serviceProvider.GetRequiredService<SecondLevelCacheInterceptor>()));
 

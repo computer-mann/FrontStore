@@ -1,4 +1,4 @@
-﻿namespace Hermes.Application.Interfaces;
+﻿namespace FrontStore.Application.Interfaces;
 
 /// <summary>
 /// Defines the interface for an image helper.

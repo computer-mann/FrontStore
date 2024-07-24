@@ -1,12 +1,12 @@
-﻿using Hermes.Application.Interfaces;
-using Hermes.Application.Services;
-using Hermes.Domain.Interfaces;
-using Hermes.Domain.Settings;
-using Hermes.Infrastructure.Repositories;
-using Hermes.Infrastructure.Services;
-using Hermes.Infrastructure.Utilities;
+﻿using FrontStore.Application.Interfaces;
+using FrontStore.Application.Services;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Domain.Settings;
+using FrontStore.Infrastructure.Repositories;
+using FrontStore.Infrastructure.Services;
+using FrontStore.Infrastructure.Utilities;
 
-namespace Hermes.API.Utilities;
+namespace FrontStore.API.Utilities;
 
 public static class ServiceExtensions
 {

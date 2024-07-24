@@ -1,12 +1,12 @@
-﻿using Hermes.Domain.Entities;
+﻿using FrontStore.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Data.Context;
+namespace FrontStore.Infrastructure.Data.Context;
 
 /// <summary>
-/// Represents the database context for the Hermes application, responsible for managing entities and their relationships.
+/// Represents the database context for the FrontStore application, responsible for managing entities and their relationships.
 /// </summary>
-public class HermesDbContext(DbContextOptions<HermesDbContext> options) : DbContext(options)
+public class FrontStoreDbContext(DbContextOptions<FrontStoreDbContext> options) : DbContext(options)
 {
     public DbSet<Product> Products { get; set; }
     public DbSet<ProductVariant> ProductVariants { get; set; }

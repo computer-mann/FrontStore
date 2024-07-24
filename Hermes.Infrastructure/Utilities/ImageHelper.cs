@@ -1,9 +1,9 @@
-﻿using Hermes.Application.Interfaces;
+﻿using FrontStore.Application.Interfaces;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Formats.Jpeg;
 using SixLabors.ImageSharp.Processing;
 
-namespace Hermes.Infrastructure.Utilities;
+namespace FrontStore.Infrastructure.Utilities;
 
 public class ImageHelper(ICloudStorageHelper cloudStorageHelper) : IImageHelper
 {

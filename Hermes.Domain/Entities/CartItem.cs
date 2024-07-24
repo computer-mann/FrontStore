@@ -1,4 +1,4 @@
-﻿namespace Hermes.Domain.Entities;
+﻿namespace FrontStore.Domain.Entities;
 
 public class CartItem : BaseEntity
 {

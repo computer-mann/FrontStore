@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using Hermes.Application.DTOs;
-using Hermes.Application.Exceptions;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Entities;
-using Hermes.Domain.Enums;
-using Hermes.Domain.Interfaces;
+using FrontStore.Application.DTOs;
+using FrontStore.Application.Exceptions;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Entities;
+using FrontStore.Domain.Enums;
+using FrontStore.Domain.Interfaces;
 
-namespace Hermes.Application.Services;
+namespace FrontStore.Application.Services;
 
 public class CouponService(IUnitOfWork unitOfWork, IMapper mapper) : ICouponService
 {

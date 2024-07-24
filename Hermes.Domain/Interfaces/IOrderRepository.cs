@@ -1,7 +1,7 @@
-﻿using Hermes.Domain.Entities;
-using Hermes.Domain.Enums;
+﻿using FrontStore.Domain.Entities;
+using FrontStore.Domain.Enums;
 
-namespace Hermes.Domain.Interfaces;
+namespace FrontStore.Domain.Interfaces;
 
 /// <summary>
 /// Defines the repository interface for managing Order entities.

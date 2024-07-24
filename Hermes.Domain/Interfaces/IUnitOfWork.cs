@@ -1,4 +1,4 @@
-﻿namespace Hermes.Domain.Interfaces;
+﻿namespace FrontStore.Domain.Interfaces;
 
 /// <summary>
 /// Defines the interface for a Unit of Work pattern implementation, responsible for managing multiple repositories within a single transaction scope.

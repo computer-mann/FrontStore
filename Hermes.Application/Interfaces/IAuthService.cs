@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
-using Hermes.Application.DTOs;
+using FrontStore.Application.DTOs;
 
-namespace Hermes.Application.Interfaces;
+namespace FrontStore.Application.Interfaces;
 
 /// <summary>
 /// Defines the interface for a service that manages user authentication.

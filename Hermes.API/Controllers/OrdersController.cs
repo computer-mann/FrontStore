@@ -1,10 +1,10 @@
-﻿using Hermes.API.Attributes;
-using Hermes.Application.DTOs;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Enums;
+﻿using FrontStore.API.Attributes;
+using FrontStore.Application.DTOs;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Enums;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Hermes.API.Controllers;
+namespace FrontStore.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

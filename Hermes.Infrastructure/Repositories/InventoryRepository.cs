@@ -1,12 +1,12 @@
-﻿using Hermes.Application.Exceptions;
-using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Application.Exceptions;
+using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
-public class InventoryRepository(HermesDbContext context)
+public class InventoryRepository(FrontStoreDbContext context)
     : GenericRepository<Inventory>(context), IInventoryRepository
 {
     /// <summary>

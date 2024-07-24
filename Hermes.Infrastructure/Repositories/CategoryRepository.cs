@@ -1,11 +1,11 @@
-﻿using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
-public class CategoryRepository(HermesDbContext context) : GenericRepository<Category>(context), ICategoryRepository
+public class CategoryRepository(FrontStoreDbContext context) : GenericRepository<Category>(context), ICategoryRepository
 {
     /// <summary>
     /// Retrieves a collection of subcategories for a given category ID.

@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Linq.Expressions;
-using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
-public abstract class GenericRepository<T>(HermesDbContext context) : IGenericRepository<T>
+public abstract class GenericRepository<T>(FrontStoreDbContext context) : IGenericRepository<T>
     where T : BaseEntity
 {
-    protected readonly HermesDbContext Context = context;
+    protected readonly FrontStoreDbContext Context = context;
 
     /// <summary>
     /// Retrieves an entity by its ID.

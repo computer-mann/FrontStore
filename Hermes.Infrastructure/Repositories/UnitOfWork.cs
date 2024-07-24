@@ -1,11 +1,11 @@
-﻿using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
 public class UnitOfWork(
-    HermesDbContext context,
+    FrontStoreDbContext context,
     ICartItemRepository cartItems,
     ICartRepository carts,
     ICategoryRepository categories,

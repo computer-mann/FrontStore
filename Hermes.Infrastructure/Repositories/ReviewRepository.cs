@@ -1,11 +1,11 @@
-﻿using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
-public class ReviewRepository(HermesDbContext context) : GenericRepository<Review>(context), IReviewRepository
+public class ReviewRepository(FrontStoreDbContext context) : GenericRepository<Review>(context), IReviewRepository
 {
     /// <summary>
     /// Retrieves a collection of reviews associated with a specific product.

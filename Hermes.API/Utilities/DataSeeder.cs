@@ -1,11 +1,11 @@
-﻿using Hermes.Domain.Entities;
-using Hermes.Domain.Enums;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Domain.Entities;
+using FrontStore.Domain.Enums;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.API.Utilities;
+namespace FrontStore.API.Utilities;
 
-public class DataSeeder(HermesDbContext context)
+public class DataSeeder(FrontStoreDbContext context)
 {
     public async Task SeedAsync()
     {
@@ -84,7 +84,7 @@ public class DataSeeder(HermesDbContext context)
             var admin = new User
             {
                 Username = "admin",
-                Email = "admin@hermes.com",
+                Email = "admin@FrontStore.com",
                 PasswordHash = "5v/JL+P4JDF4HXco6t2O7rKYMUSgJVlXCRDqFuJV20o=",
                 FirstName = "Admin",
                 LastName = "User",
@@ -104,7 +104,7 @@ public class DataSeeder(HermesDbContext context)
             var user1 = new User
             {
                 Username = "user1",
-                Email = "user1@hermes.com",
+                Email = "user1@FrontStore.com",
                 PasswordHash = "5v/JL+P4JDF4HXco6t2O7rKYMUSgJVlXCRDqFuJV20o=",
                 FirstName = "John",
                 LastName = "Doe",
@@ -125,7 +125,7 @@ public class DataSeeder(HermesDbContext context)
             var user2 = new User
             {
                 Username = "user2",
-                Email = "user2@hermes.com",
+                Email = "user2@FrontStore.com",
                 PasswordHash = "5v/JL+P4JDF4HXco6t2O7rKYMUSgJVlXCRDqFuJV20o=",
                 FirstName = "Jane",
                 LastName = "Smith",
@@ -145,7 +145,7 @@ public class DataSeeder(HermesDbContext context)
             var seller1 = new User
             {
                 Username = "seller1",
-                Email = "seller1@hermes.com",
+                Email = "seller1@FrontStore.com",
                 PasswordHash = "5v/JL+P4JDF4HXco6t2O7rKYMUSgJVlXCRDqFuJV20o=",
                 FirstName = "Bob",
                 LastName = "Johnson",
@@ -166,7 +166,7 @@ public class DataSeeder(HermesDbContext context)
             var seller2 = new User
             {
                 Username = "seller2",
-                Email = "seller2@hermes.com",
+                Email = "seller2@FrontStore.com",
                 PasswordHash = "5v/JL+P4JDF4HXco6t2O7rKYMUSgJVlXCRDqFuJV20o=",
                 FirstName = "Alice",
                 LastName = "Williams",

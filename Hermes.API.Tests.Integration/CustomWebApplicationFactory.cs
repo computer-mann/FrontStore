@@ -1,17 +1,17 @@
-﻿using Hermes.API.Utilities;
-using Hermes.Application.Interfaces;
-using Hermes.Application.Services;
+﻿using FrontStore.API.Utilities;
+using FrontStore.Application.Interfaces;
+using FrontStore.Application.Services;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Hermes.Infrastructure.Data.Context;
-using Hermes.Infrastructure.Utilities;
+using FrontStore.Infrastructure.Data.Context;
+using FrontStore.Infrastructure.Utilities;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-namespace Hermes.API.Tests.Integration;
+namespace FrontStore.API.Tests.Integration;
 
 public class CustomWebApplicationFactory<TStartup>
     : WebApplicationFactory<TStartup> where TStartup : class
@@ -28,7 +28,7 @@ public class CustomWebApplicationFactory<TStartup>
             // Remove the existing DbContextOptions
             var descriptor = services.SingleOrDefault(
                 d => d.ServiceType ==
-                     typeof(DbContextOptions<HermesDbContext>));
+                     typeof(DbContextOptions<FrontStoreDbContext>));
 
             if (descriptor != null)
             {
@@ -36,9 +36,9 @@ public class CustomWebApplicationFactory<TStartup>
             }
 
             // Add an in-memory database for testing
-            services.AddDbContext<HermesDbContext>(options =>
+            services.AddDbContext<FrontStoreDbContext>(options =>
             {
-                options.UseInMemoryDatabase("HermesTestDb");
+                options.UseInMemoryDatabase("FrontStoreTestDb");
                 options.ConfigureWarnings(x => x.Ignore(InMemoryEventId.TransactionIgnoredWarning));
             });
             
@@ -47,7 +47,7 @@ public class CustomWebApplicationFactory<TStartup>
             {
                 var configuration = sp.GetRequiredService<IConfiguration>();
                 services.AddSettings(configuration);
-                var context = sp.GetRequiredService<HermesDbContext>();
+                var context = sp.GetRequiredService<FrontStoreDbContext>();
                 return new DataSeeder(context);
             });
         });

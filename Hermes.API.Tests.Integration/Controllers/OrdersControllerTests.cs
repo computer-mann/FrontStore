@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics;
 using System.Net;
 using System.Net.Http.Json;
-using Hermes.Application.DTOs;
-using Hermes.Domain.Enums;
+using FrontStore.Application.DTOs;
+using FrontStore.Domain.Enums;
 
-namespace Hermes.API.Tests.Integration.Controllers;
+namespace FrontStore.API.Tests.Integration.Controllers;
 
 public class OrdersControllerTests(CustomWebApplicationFactory<Program> factory)
     : IClassFixture<CustomWebApplicationFactory<Program>>

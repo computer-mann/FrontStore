@@ -1,14 +1,14 @@
-﻿using Hermes.API.Attributes;
-using Hermes.Application.DTOs;
-using Hermes.Application.Exceptions;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Enums;
-using Hermes.Domain.Settings;
+﻿using FrontStore.API.Attributes;
+using FrontStore.Application.DTOs;
+using FrontStore.Application.Exceptions;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Enums;
+using FrontStore.Domain.Settings;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Stripe;
 
-namespace Hermes.API.Controllers;
+namespace FrontStore.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

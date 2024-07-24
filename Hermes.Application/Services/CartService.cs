@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using Hermes.Application.DTOs;
-using Hermes.Application.Exceptions;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
+using FrontStore.Application.DTOs;
+using FrontStore.Application.Exceptions;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
 
-namespace Hermes.Application.Services;
+namespace FrontStore.Application.Services;
 
 public class CartService(IUnitOfWork unitOfWork, IInventoryService inventoryService, ICouponService couponService, IShippingService shippingService, IMapper mapper) : ICartService
 {

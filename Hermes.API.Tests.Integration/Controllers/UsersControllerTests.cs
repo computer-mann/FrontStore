@@ -1,8 +1,8 @@
 ﻿using System.Net;
 using System.Net.Http.Json;
-using Hermes.Application.DTOs;
+using FrontStore.Application.DTOs;
 
-namespace Hermes.API.Tests.Integration.Controllers;
+namespace FrontStore.API.Tests.Integration.Controllers;
 
 public class UsersControllerTests(CustomWebApplicationFactory<Program> factory)
     : IClassFixture<CustomWebApplicationFactory<Program>>
@@ -63,7 +63,7 @@ public class UsersControllerTests(CustomWebApplicationFactory<Program> factory)
         {
             Id = 1,
             Username = "admin",
-            Email = "admin@hermes.com",
+            Email = "admin@FrontStore.com",
             FullName = "Updated Admin User",
             PhoneNumber = "1234567890",
             Address = new AddressDto
@@ -95,7 +95,7 @@ public class UsersControllerTests(CustomWebApplicationFactory<Program> factory)
         {
             Id = 1,
             Username = "admin",
-            Email = "admin@hermes.com",
+            Email = "admin@FrontStore.com",
             FullName = "Updated Admin User",
             PhoneNumber = "1234567890",
             Address = new AddressDto
@@ -124,7 +124,7 @@ public class UsersControllerTests(CustomWebApplicationFactory<Program> factory)
         {
             Id = 1,
             Username = "admin",
-            Email = "admin@hermes.com",
+            Email = "admin@FrontStore.com",
             FullName = "Updated Admin User",
             PhoneNumber = "1234567890",
             Address = new AddressDto

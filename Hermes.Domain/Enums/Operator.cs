@@ -1,4 +1,4 @@
-﻿namespace Hermes.Domain.Enums;
+﻿namespace FrontStore.Domain.Enums;
 
 public enum Operator
 {

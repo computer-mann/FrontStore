@@ -3,16 +3,16 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using AutoMapper;
-using Hermes.Application.DTOs;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Domain.Settings;
+using FrontStore.Application.DTOs;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Domain.Settings;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Hermes.Application.Services;
+namespace FrontStore.Application.Services;
 
 public class AuthService(IUnitOfWork unitOfWork, IEmailService emailService, IMapper mapper, IOptions<JwtSettings> options)
     : IAuthService

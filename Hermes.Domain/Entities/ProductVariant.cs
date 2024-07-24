@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Hermes.Domain.Entities;
+namespace FrontStore.Domain.Entities;
 
 public class ProductVariant : BaseEntity
 {

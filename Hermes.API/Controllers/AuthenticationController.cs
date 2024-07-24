@@ -1,9 +1,9 @@
-﻿using Hermes.Application.DTOs;
-using Hermes.Application.Interfaces;
-using Hermes.Domain.Interfaces;
+﻿using FrontStore.Application.DTOs;
+using FrontStore.Application.Interfaces;
+using FrontStore.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Hermes.API.Controllers;
+namespace FrontStore.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

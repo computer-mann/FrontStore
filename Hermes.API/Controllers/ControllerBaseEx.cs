@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Hermes.API.Controllers;
+namespace FrontStore.API.Controllers;
 
 public class ControllerBaseEx : ControllerBase
 {

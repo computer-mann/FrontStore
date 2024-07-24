@@ -1,4 +1,4 @@
-﻿namespace Hermes.Application.Interfaces;
+﻿namespace FrontStore.Application.Interfaces;
 
 /// <summary>
 /// A helper for uploading files to Storage.

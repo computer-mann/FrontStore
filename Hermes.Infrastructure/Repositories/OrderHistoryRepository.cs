@@ -1,11 +1,11 @@
-﻿using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
-public class OrderHistoryRepository(HermesDbContext context) : GenericRepository<OrderHistory>(context), IOrderHistoryRepository
+public class OrderHistoryRepository(FrontStoreDbContext context) : GenericRepository<OrderHistory>(context), IOrderHistoryRepository
 {
     /// <summary>
     /// Retrieves a collection of OrderHistory records associated with a specific order.

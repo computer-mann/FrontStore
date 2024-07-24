@@ -1,11 +1,11 @@
-﻿using Hermes.Domain.Entities;
-using Hermes.Domain.Interfaces;
-using Hermes.Infrastructure.Data.Context;
+﻿using FrontStore.Domain.Entities;
+using FrontStore.Domain.Interfaces;
+using FrontStore.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hermes.Infrastructure.Repositories;
+namespace FrontStore.Infrastructure.Repositories;
 
-public class ProductRepository(HermesDbContext context) : GenericRepository<Product>(context), IProductRepository
+public class ProductRepository(FrontStoreDbContext context) : GenericRepository<Product>(context), IProductRepository
 {
     /// <summary>
     /// Retrieves an entity by its ID.

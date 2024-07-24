@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Hermes.Application.DTOs;
-using Hermes.Domain.Entities;
+using FrontStore.Application.DTOs;
+using FrontStore.Domain.Entities;
 
-namespace Hermes.API.Mappers;
+namespace FrontStore.API.Mappers;
 
 public class MappingProfile : Profile
 {

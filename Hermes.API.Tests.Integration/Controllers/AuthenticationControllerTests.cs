@@ -1,8 +1,8 @@
 ﻿using System.Net;
 using System.Net.Http.Json;
-using Hermes.Application.DTOs;
+using FrontStore.Application.DTOs;
 
-namespace Hermes.API.Tests.Integration.Controllers;
+namespace FrontStore.API.Tests.Integration.Controllers;
 
 public class AuthenticationControllerTests(CustomWebApplicationFactory<Program> factory)
     : IClassFixture<CustomWebApplicationFactory<Program>>
@@ -82,7 +82,7 @@ public class AuthenticationControllerTests(CustomWebApplicationFactory<Program> 
         var newUser = new RegisterDto
         {
             Username = "admin",
-            Email = "admin@hermes.com", // Existing email
+            Email = "admin@FrontStore.com", // Existing email
             Password = "@Asd123456",
             ConfirmPassword = "@Asd123456",
             FirstName = "Test",
@@ -191,7 +191,7 @@ public class AuthenticationControllerTests(CustomWebApplicationFactory<Program> 
     public async Task ForgotPassword_ValidEmail_ReturnsOk()
     {
         // Arrange
-        var email = "admin@hermes.com";
+        var email = "admin@FrontStore.com";
 
         // Act
         var response = await _client.PostAsync($"/api/Authentication/forgot?email={email}", null);
